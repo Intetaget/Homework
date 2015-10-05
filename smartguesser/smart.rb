@@ -3,7 +3,7 @@ class smart
   	number = rand(1..100)
   		until guess == number
   			if STARTNUMBER < number
-  			then 1.5(STARTNUMBER)
+  			then 1.5 * STARTNUMBER
 				else (STARTNUMBER)/1.5
 				end
 end
@@ -13,7 +13,13 @@ class smartplayer
     @guess=50
   end
 
+# :low, : high
 
+def get_guess(last_result
+  if last _reulst ==low@min = @guesse
+    elseif last_result == :high
+    @max = @guess)
+    else @guess
 
 
 

@@ -32,6 +32,7 @@ game1 = GuessingGame.new(CountingPlayer.new)
 # game2 = GuessingGame.new(RandomPlayer.new)
 # game3 = GuessingGame.new(RandomPlayer.new)
 # game4 = GuessingGame.new(HumanPlayer.new)
+# game5 = GuessingGame.new(SmartPlayer.new)
 
 game1.play
 
