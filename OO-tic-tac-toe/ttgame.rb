@@ -5,3 +5,8 @@ def greeting
   puts "The purpose is to line up 3 of your choices in a diagonal, horizontal or vertical" 
   puts "line on the 3x3 board.  Shall we play?"
 end
+
+
+
+#def choosing_player
+ # puts "do you want to play against the computer?, press x"

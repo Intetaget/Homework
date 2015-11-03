@@ -21,7 +21,7 @@ class Player
 
   private
   def get_name
-    puts "What is your name?"
+    puts "What is your name? Human player"
     gets.chomp
   end
 
