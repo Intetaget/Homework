@@ -7,7 +7,6 @@ class ComputerPlayer
 	end 
 
 	def get_move
-		puts "#{self.name}: What is your move?"
 		rand(0..9)
 	end
 

@@ -15,7 +15,6 @@ class Player
 	end
 
 	def get_move
-  		puts "#{self.name}: What is your move?"
   		gets.chomp.to_i - 1
   	end
 
