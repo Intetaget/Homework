@@ -4,8 +4,8 @@ class Board
 		@spaces = (1..9).to_a
 	end
 	
-	nums = ["dog", "cat", "monkey","whatever"]
-	nums[2] = "chimp"
+	# nums = ["dog", "cat", "monkey","whatever"]
+	# nums[2] = "chimp"
 
 	def show
 	  puts "	#{@spaces[0]} #{@spaces[1]} #{@spaces[2]}"
