@@ -6,7 +6,7 @@ require "./computerplayer"
 greeting
 
 def new_game
-  puts "do you want to play against the computer? If so, press x."
+  puts "do you want to play against the computer? If so, press X."
   puts " The computer's choices will be noted with C, and make the" 
   puts " first move make your choice please"
   i_choose_the_pc = gets.chomp.to_s
@@ -22,20 +22,22 @@ def new_game
   until board.game_over?
       board.show
       puts "#{current_player.name}: What is your move?"
-        until valid_move?
-        move = current_player.get_move
-      # make sure that move is valid, otherwise ask again
-
-        board.move!(move, current_player.letter)
-      if current_player == player1
-        current_player = player2
-      else
-        current_player = player1
+      move = current_player.get_move
+      #binding.pry
+      until board.valid_move?(move)
+          puts "#{current_player.name} Give me a proper option"
+          move = current_player.get_move
       end
+      board.move!(move, current_player.letter)
+    if current_player == player1
+       current_player = player2
+    else
+       current_player = player1
     end
+  end  
+end   
+  
 
-    ## postmortem here?
-end
 
 def play_again
   puts" Would you like to play again?  Choose Y or N"

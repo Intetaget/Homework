@@ -15,7 +15,7 @@ class Player
 	end
 
 	def get_move
-  		gets.chomp.to_i - 1
+  		gets.chomp.to_i
   	end
 
   private

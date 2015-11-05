@@ -20,7 +20,7 @@ class Board
 
 	def move!(location, piece)
 		## how do we changes the board with the location and piece
-		@spaces[location] = piece
+		@spaces[location-1] = piece
 	end
 	
 	def valid_move?(location)
