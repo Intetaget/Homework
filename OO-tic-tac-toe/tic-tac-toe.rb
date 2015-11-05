@@ -22,10 +22,11 @@ def new_game
   until board.game_over?
       board.show
       puts "#{current_player.name}: What is your move?"
-      move = current_player.get_move
-      # board[move] = current_player.letter
-      # binding.pry
-      board.move!(move, current_player.letter)
+        until valid_move?
+        move = current_player.get_move
+      # make sure that move is valid, otherwise ask again
+
+        board.move!(move, current_player.letter)
       if current_player == player1
         current_player = player2
       else
@@ -35,18 +36,16 @@ def new_game
 
     ## postmortem here?
 end
-new_game
+
 def play_again
   puts" Would you like to play again?  Choose Y or N"
   play = gets.chomp.upcase
   if play == "Y"
-  new_game
+    new_game
   else
-  play = "N"
-  puts "Thank you for playing, now exit the program"
+    puts "Thank you for playing, now exit the program"
   end
 end  
+
+new_game
 play_again
-
-
-
